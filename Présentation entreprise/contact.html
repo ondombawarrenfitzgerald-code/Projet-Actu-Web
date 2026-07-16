@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mon Site d'Actualités</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#003366;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        nav{
+            background:#00509e;
+            padding:10px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+        }
+
+        .container{
+            width:90%;
+            max-width:700px;
+            margin:30px auto;
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            text-align:center;
+            color:#003366;
+        }
+
+        label{
+            display:block;
+            margin-top:15px;
+            font-weight:bold;
+        }
+
+        input, textarea, select{
+            width:100%;
+            padding:10px;
+            margin-top:5px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            box-sizing:border-box;
+        }
+
+        textarea{
+            resize:vertical;
+        }
+
+        button{
+            width:100%;
+            padding:12px;
+            margin-top:20px;
+            background:#003366;
+            color:white;
+            border:none;
+            border-radius:5px;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#00509e;
+        }
+
+        footer{
+            background:#003366;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Contact</h1>
+</header>
+
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="about.html">À propos</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+<h2>Formulaire de contact</h2>
+
+<form action="#" method="post">
+
+<label for="nom">Nom complet</label>
+<input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+
+<label for="email">Adresse e-mail</label>
+<input type="email" id="email" name="email" placeholder="exemple@email.com" required>
+
+<label for="telephone">Téléphone</label>
+<input type="tel" id="telephone" name="telephone" placeholder="+241 XX XX XX XX">
+
+<label for="sujet">Sujet</label>
+<select id="sujet" name="sujet" required>
+    <option value="">--Choisissez un sujet--</option>
+    <option>Demande d'information</option>
+    <option>Réclamation</option>
+    <option>Suggestion</option>
+    <option>Autre</option>
+</select>
+
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="6" placeholder="Écrivez votre message..." required></textarea>
+
+<button type="submit">Envoyer</button>
+
+</form>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Mon Site d'Actualités - Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
